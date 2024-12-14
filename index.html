@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+  /* Default Styling */
+  h1 { 
+    color: green; 
+    font-size: 3rem; 
+  }
+  p { 
+    color: tomato; 
+    background-color: lightblue; 
+    font-family: monospace; 
+    font-size: 1.5rem;
+  }
+  .abcdS { 
+    color: black; 
+    font-size: 1.5rem; 
+    border: 5px solid yellow; 
+  }
+  select, input { 
+    font-size: 1.5rem; 
+  }
+  li { 
+    border: 5px solid yellow; 
+    list-style-type: square; 
+    font-size: 1.2rem; 
+  }
+  marquee { 
+    font-size: 2rem; 
+  }
+  button { 
+    font-size: 1.5rem; 
+    background-color: fuchsia; 
+  }
+  button:hover { 
+    background-color: lightblue; 
+    transform: scale(0.9); 
+    transition: 0.3s ease-in-out; 
+  }
+
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    p, .abcdS, li, select, input { font-size: 1.2rem; }
+    button, marquee { font-size: 1.3rem; }
+  }
+
+  @media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    p, .abcdS, li, select, input { font-size: 1rem; }
+    button, marquee { font-size: 1rem; }
+  }
+
+  @media (orientation: portrait) {
+    body { 
+      padding: 0.5rem; 
+    }
+    button { 
+      font-size: 1.2rem; 
+    }
+  }
+  h1{ color : green; font-size :300%;}
+  p{ color : tomato; background-color:lightblue; font-family: monospace; ; font-size:200%,} 
+  .abcdS{color: black; font-size:200%; border:5px solid yellow;}
+  select{font-size:200%}
+  li{border : 5px solid yellow;list-style-type : Square; font-size :200%}
+  h2{ font-size :300%}
+  marquee{font-size :300%; }
+  
+  
+  button{ font-size :300%; background-color:fuchsia; }
+  button:hover{background-color:lightblue;transtion:0,05ms;transform:scale(90%);}
+  input{font-size:250%}
+  h3{ color : brown;font-size :200%}
+  h4 { color :green }
+  .first { background-color : yellow;}
+  
+	h12{font-size:5px;color:blue;text-weight:bolder; text-align:center; font-familiy:monospace;}
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Your information</title>
+</style>
+</head>
+
+<body> 
+  <center>
+    
+    <div class="first">
+<h1 > <strong> Your Information</strong></h1>
+    </div>
+    <button id="zzz" onclick="abc()">Masukan Nama</button>
+     <p id="demo"></p>
+
+       <script>
+         var zzz=document.getElementById("zzz")
+         zzz.style.fontFamily='monospace'
+        function abc() {
+        let person = prompt("Your Name", "")
+          if (person === "ADIVA GEFRILA BELFINIA") {
+           document.getElementById("demo").innerHTML =
+          "Hello " + person + " !Semangat dalam mengaji agar pintar dan bisa mengajar generasi berikutnya dan jangan mudah marah"; }else if(person === "AVILA RAMDHANI"){document.getElementById("demo").innerHTML="Hello "+person+"  !semangat Akir-akir ini ngajinya kurang serius dan fokus, semoga cepat hafal doa Qunut. ";}else if(person==="RIMA IKA"){document.getElementById("demo").innerHTML="Hello " + person+" Saat Hafalan bagus, fokus dan tidak membantah, tetapi kurangi mengajak bicara temanya saat mengaji";} else if(person === "ARYA APLIYO FAMBUDI"){document.getElementById("demo").innerHTML="Hello "+ person+" Semangat, kamu sulit sekali untuk fokus, latihan fokus sebentar yaa, agar pintar ke depanya"} else if(person==="AISYAH"){document.getElementById("demo").innerHTML="Hello "+person+ " Semangat jangan mudah merespon temanya saat hafalan fokus aja, biar cepet dan pintar"} else if(person==="ALEA"){document.getElementById("demo").innerHTML="Hello "+person+ " Semangat kalau hafalan bagus, mudah fokus dan jarang terpengaruh temanya, pertahankan"} else if(person==="YANA"){document.getElementById("demo").innerHTML="Hello "+person+" Semangat kalau hafalan sudah baik, tetapi sulit fokus saat mengaji"} else if(person==="TIAR"){document.getElementById("demo").innerHTML="Hello "+person+ " Semangat kalau hafalan jangan sering bawa mainan dan jangan mudah terpengaruh apa yang dikatakan temanya"}else{alert("MASUKAN NAMA LENGKAP DENGAN HURUF BESAR SEMUA")}
+          
+        }
+          </script>
+  </center>
+  
+ <br>
+ 
+ 
+ <marquee bgcolor="lightgreen" behavior="alter" direction="lef">Berikut adalah daftar hafalan kalian</marquee> 
+  <center>
+  <h2 class="az"> Adiva Gefrila Belfinia</h2>
+  </center>
+  <script>
+    var az = document.getElementsByClassName("az");setInterval(function(){az[0].style.color="red";setTimeout(function(){az[0].style.color="black";},500)},1000);
+  </script>
+  <center>
+  
+  <li>
+    <a href="https://sites.google.com/view/yourinformationaboutngaji/halaman-muka" > DOA SEHARI-HARI</a>
+  </li>
+  <li>
+    <a href="https://sites.google.com/view/yourinfromationaboutngaji2/halaman-muka"> HAFALAN AL QURAN </a>
+  </li>
+  
+  <br>
+</center>
+ <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slct">Click here</button>
+<p id="abcd"></p>
+</center>
+<script>
+  const slct = document.getElementById("slct")
+  slct.style.background="tomato"
+  slct.style.fontFamily="monospace"
+  slct.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1").value === "DOA SEHARI HARI") {
+      document.getElementById("abcd").innerHTML="Adiva telah menghafal DOA SEHARI HARI SEBANYAK 12, terus tingkatkan";
+    } else if (document.getElementById("welcomeabc1").value === "HAFALAN") {document.getElementById("abcd").innerHTML="Adiva telah menghafal 17 Surat dari Al Quran dan juga menghafal Ayat kursi, bacalah ayat kursi setelah selesai sholat";}
+  })
+</script> 
+<center>
+  <h2 class="ab"> Avila Ramdhani</h2>
+  <script>
+    var ab =document.getElementsByClassName("ab");setInterval(function(){ab[0].style.color="yellow";setTimeout(function(){ab[0].style.color="black";},500)},1000);
+  </script>
+  </center>
+  <center>
+  <li>
+    <a href="https://sites.google.com/view/luckywkwkwk/halaman-muka"> DOA SEHARI-HARI </a>
+  </li>
+  <li>
+    <a href="https://sites.google.com/view/luckywkwkwkwk/halaman-muka"> HAFALAN AL QURAN</a>
+  </li>
+   <br>
+  <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1a">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slcta">Click here</button>
+<p id="abcda"></p>
+</center>
+<script>
+  const slcta = document.getElementById("slcta")
+  slcta.style.background="tomato"
+  slcta.style.fontFamily="monospace"
+  slcta.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1a").value === "DOA SEHARI HARI") {
+      document.getElementById("abcda").innerHTML="Avila telah menghafal DOA SEHARI HARI SEBANYAK 12  terus tingkatkan, JANGAN LUPA FOKUS..NGAJI CUMA SEBENTAR";
+    } else if (document.getElementById("welcomeabc1a").value === "HAFALAN") {document.getElementById("abcda").innerHTML="Avila telah menghafal 16 surat dari Al Quran dan ayat kursi, bacalah ayat kursi setelah sholat";}
+  })
+</script> 
+  </center>
+  <center>
+    <h2 class="ac"> Arya Apliyo Fambudi</h2>
+    <script>
+      var ac=document.getElementsByClassName("ac");setInterval(function(){ac[0].style.color="green";setTimeout(function(){ac[0].style.color="black";},500)},1000);
+    </script>
+    <li>
+      <a href="https://sites.google.com/view/luckywkwkwkwkwk/halaman-muka" > DOA SEHARI-HARI</a>
+    </li>
+    <li>
+      <a href="https://sites.google.com/view/luckywkwkwkwkwkwk/halaman-muka" > HAFALAN AL QURAN</a>
+    </li>
+    <br>
+    <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1b">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slctb">Click here</button>
+<p id="abcdb"></p>
+</center>
+<script>
+  const slctb = document.getElementById("slctb")
+  slctb.style.background="tomato"
+  slctb.style.fontFamily="monospace"
+  slctb.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1b").value === "DOA SEHARI HARI") {
+      document.getElementById("abcdb").innerHTML="Arya telah menghafal DOA SEHARI HARI SEBANYAK 9,terus tingkatkan dan jangan berkelahi dengan tiar";
+    } else if (document.getElementById("welcomeabc1b").value === "HAFALAN") {document.getElementById("abcdb").innerHTML="Arya telah menghafal 4 surat dari Al Quran";}
+  })
+</script> 
+  </center>
+  <center>
+    <h2 class="ad"> Rima Ika</h2>
+    <script>
+      var ad=document.getElementsByClassName("ad");setInterval(function(){ad[0].style.color="blue";setTimeout(function(){ad[0].style.color="black";},500)},1000);
+    </script>
+    <li>
+      <a href="https://sites.google.com/view/luckywkwkwkwkwwkwk/halaman-muka"> DOA SEHARI-HARI</a>
+    </li>
+    <li>
+      <a href="https://sites.google.com/view/luckywkwkwkwkwkw/halaman-muka"> HAFALAN AL QURAN</a>
+    </li>
+    <br>
+  <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1c">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slctc">Click here</button>
+<p id="abcdc"></p>
+</center>
+<script>
+  const slctc = document.getElementById("slctc")
+  slctc.style.background="tomato"
+  slctc.style.fontFamily="monospace"
+  slctc.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1c").value === "DOA SEHARI HARI") {
+      document.getElementById("abcdc").innerHTML="Rima telah menghafal DOA SEHARI HARI SEBANYAK 12, terus tingkatkan";
+    } else if (document.getElementById("welcomeabc1c").value === "HAFALAN") {document.getElementById("abcdc").innerHTML="Rima telah menghafal 15 surat dari Al Quran dan ayat kursi, bacalah ayat kursi setelah sholat";}
+  })
+</script> 
+  <br>
+  <center>
+    
+    <center>
+      <h2 class="af"> Aisyah</h2>
+      <script>
+      var af=document.getElementsByClassName("af");setInterval(function(){af[0].style.color="purple";setTimeout(function(){af[0].style.color="black";},500)},1000);
+      </script>
+      <li>
+        <a href="https://sites.google.com/view/lwkwkwkwkw/halaman-muka">DOA SEHARI-HARI</a>
+      </li>
+      <li>
+        <a href="https://sites.google.com/view/wkwkwkwkwwkwk/halaman-muka"> HAFALAN AL QURAN</a>
+      </li>
+      <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1e">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slcte">Click here</button>
+<p id="abcde"></p>
+</center>
+<script>
+  const slcte = document.getElementById("slcte")
+  slcte.style.background="tomato"
+  slcte.style.fontFamily="monospace"
+  slcte.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1e").value === "DOA SEHARI HARI") {
+      document.getElementById("abcde").innerHTML="Aisyah telah menghafal DOA SEHARI HARI SEBANYAK 9, terus tingkatkan";
+    } else if (document.getElementById("welcomeabc1e").value === "HAFALAN") {document.getElementById("abcde").innerHTML="Aisyah telah menghafal 5 surat dari Al Quran";}
+  })
+</script> 
+    </center>
+    
+    <center>
+      <h2 class="ae"> Alea</h2>
+      <script>
+      var ae=document.getElementsByClassName("ae");setInterval(function(){ae[0].style.color="brown";setTimeout(function(){ae[0].style.color="black";},500)},1000);
+      </script>
+      <li>
+        <a href="https://sites.google.com/view/wkwkwkwkwkwk1/halaman-muka"> DOA SEHARI HARI</a>
+      </li>
+      <li>
+        <a href="https://sites.google.com/view/wkwkwkwk2/halaman-muka"> HAFALAN AL QURAN</a>
+      </li>
+<center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1f">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slctf">Click here</button>
+<p id="abcdf"></p>
+</center>
+<script>
+  const slctf = document.getElementById("slctf")
+  slctf.style.background="tomato"
+  slctf.style.fontFamily="monospace"
+  slctf.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1f").value === "DOA SEHARI HARI") {
+      document.getElementById("abcdf").innerHTML="Alea telah menghafal DOA SEHARI HARI SEBANYAK 11, Terus tingkatkan";
+    } else if (document.getElementById("welcomeabc1f").value === "HAFALAN") {document.getElementById("abcdf").innerHTML="Alea telah menghafal 6 surat dari Al Quran";}
+  })
+</script> 
+    </center>
+    
+    <center>
+      <h2 class="ag"> Yana</h2>
+    <script>
+      var ag=document.getElementsByClassName("ag");setInterval(function(){ag[0].style.color="pink";setTimeout(function(){ag[0].style.color="black";},500)},1000);
+      </script>
+      <li>
+        <a href="https://sites.google.com/view/wkwkwk12/halaman-muka">DOA SEHARI-HARI</a>
+      </li>
+      <li>
+        <a href="https://sites.google.com/view/wkwk123/halaman-muka"> HAFALAN AL QURAN</a>
+      </li>
+      <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1g">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slctg">Click here</button>
+<p id="abcdg"></p>
+</center>
+<script>
+  const slctg = document.getElementById("slctg")
+  slctg.style.background="tomato"
+  slctg.style.fontFamily="monospace"
+  slctg.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1g").value === "DOA SEHARI HARI") {
+      document.getElementById("abcdg").innerHTML="Yana telah menghafal DOA SEHARI HARI SEBANYAK 8, terus tingkatkan dan jangan pulang dulu sebelum hafalan";
+    } else if (document.getElementById("welcomeabc1g").value === "HAFALAN") {document.getElementById("abcdg").innerHTML="Yana telah menghafal 3 surat dari Al Quran";}
+  })
+</script> 
+    </center>
+    
+    <center>
+      <h2 class="ah"> Tiar</h2>
+      <script>
+      var ah=document.getElementsByClassName("ah");setInterval(function(){ah[0].style.color="gray";setTimeout(function(){ah[0].style.color="black";},500)},1000);
+      </script>
+      <li>
+        <a href="https://sites.google.com/view/wk1236/halaman-muka"> DOA SEHARI-HARI</a>
+      </li>
+      <li>
+        <a href="https://sites.google.com/view/wk135/halaman-muka"> HAFALAN AL QURAN</a>
+      </li>
+      <center>
+<h1 class="abcdS">INFO SINGKAT</h1>
+<select id ="welcomeabc1h">
+  <option >DOA SEHARI HARI</option>
+  <option >HAFALAN</option>
+</select> 
+</center>
+<br>
+<center>
+<button id="slcth">Click here</button>
+<p id="abcdh"></p>
+</center>
+<script>
+  const slcth = document.getElementById("slcth")
+  slcth.style.background="tomato"
+  slcth.style.fontFamily="monospace"
+  slcth.addEventListener("click", function() {
+    if (document.getElementById("welcomeabc1h").value === "DOA SEHARI HARI") {
+      document.getElementById("abcdh").innerHTML="Tiar telah menghafal DOA SEHARI HARI SEBANYAK 9 terus tingkatkan";
+    } else if (document.getElementById("welcomeabc1h").value === "HAFALAN") {document.getElementById("abcdh").innerHTML="Tiar telah menghafal 3 surat dari Al Quran";}
+  })
+</script> 
+    </center>
+    <h3> <u>Daftar Latihan Soal Agama </u></h3>
+<button id="soal" >
+  <a href="https://forms.gle/kf9AbovRmDTzrqeu5"> Soal 1</a>
+</button>
+<button id="soalb">
+  <a href="https://forms.gle/nrmXKL3sQq4mdF8T8"> Soal 2</a>
+</button>
+<button id="soala">
+  <a href="https://forms.gle/p9vKX3WThh95An1Q6">Soal 3</a>
+</button>
+<script>
+  var soal=document.getElementById("soal")
+  soal.style.background='brown'
+</script>
+</center>
+<script>
+  var soal=document.getElementById("soala")
+  soal.style.background='brown'
+</script>
+<script>
+  var soal=document.getElementById("soalb")
+  soal.style.background='brown'
+</script>
+</center>
+ <br>
+  <center>
+    <p> Link untuk melihat vidio sejarah Islam</p>
+  <button id="yt" onclick="welcome()">CHANNEL YUTUBE</button>
+  <script>
+    var yt=document.getElementById("yt")
+    yt.style.background="grey"
+    function welcome(){window.open( "https://www.youtube.com/@lwk6144") }
+  </script>
+  </center>
+  
+<br>
+<center>
+<h12 >PILIHLAH ANGKA 1-3 UNTUK MELIHAT MOTIVASI</h12>
+</center>
+<center>
+<input font-size="200%" id="welcome1" type="text" />
+</center>
+<center>
+<button12 id="button">Open</button12>
+</center>
+<br>
+<center>
+<p  id="abc"></p>
+</center>
+<script>
+  const btn = document.getElementById("button")
+  const inpt=document.getElementById("welcome1")
+  inpt.style.background="lime"
+  btn.style.fontSize='200%'
+  btn.addEventListener("click", function() {
+    if (document.getElementById("welcome1").value === "1") {
+      document.getElementById("abc").innerHTML="ANDAI ORANG YANG SUDAH MENINGGAL BISA MINTA DIDHUPKAN KEMBALI,MEREKA AKAN BERBUAT KEBAIKAN";
+    } else if (document.getElementById("welcome1").value === "2") {
+      document.getElementById("abc").innerHTML="Al Quran merupakan perkataan Allah swt yang disampaikan lewat Nabi Muhammad saw, 1400 tahun berlalu Al Quran tetap terjaga keaslianya";} else if(document.getElementById("welcome1").value==="3"){document.getElementById("abc").innerHTML="Walaupun tidak memiliki TIKTOK,IG,FACEBOOK Pengikut nabi Muhammad melebihi langit dan bumi"}else{alert("PILIH LAH ANGKA 1 SAMAPAI 3, LALU TEKAN OPEN")}
+  })
+</script>
+
+<center>
+&copy : Lucky Wahyu K. made Grup-Ngaji 25 november 2023. made this-web 28 mei 2024.
+</center>
+</body>
+</html>
